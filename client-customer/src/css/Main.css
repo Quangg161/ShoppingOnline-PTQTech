@@ -1,0 +1,170 @@
+/* Đảm bảo phần header chứa logo và menu sử dụng Flexbox */
+.header-container {
+  display: flex;
+  justify-content: space-between;  /* Đặt logo và menu nằm ở 2 bên trái phải */
+  align-items: center;  /* Căn giữa theo chiều dọc */
+  padding: 0px 0px;  /* Padding cho header */
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Thêm bóng đổ */
+  z-index: 1000;
+}
+
+/* Logo và tên nằm bên trái */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;  /* Khoảng cách giữa logo và tên */
+}
+
+.logo {
+  width: 70px;  /* Điều chỉnh kích thước logo */
+  height: auto;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+
+/* Menu nằm bên phải */
+.menu-container {
+  display: flex;
+  justify-content: space-around;  /* Căn giữa các mục menu */
+  width: 60%;  /* Điều chỉnh chiều rộng của menu */
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-container a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-container a:hover {
+  color: #3498db;
+}
+
+/* Phong cách cho phần thông báo */
+.inform-container {
+  width: 100%;
+  padding: 15px;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Đặt kiểu chữ và màu sắc chung cho toàn bộ trang */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .body-customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Phong cách cho Menu */
+  .menu-container {
+    width: 100%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-container a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-container a:hover {
+    color: #3498db;
+  }
+  
+  /* Phong cách cho phần thông báo */
+  .inform-container {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Phong cách cho nội dung chính */
+  .content-container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .content-container:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1.5px);
+  }
+  
+  /* Phong cách cho các thành phần nút */
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Phong cách cho các tiêu đề */
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Phong cách cho liên kết */
+  a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #2980b9;
+  }
+  

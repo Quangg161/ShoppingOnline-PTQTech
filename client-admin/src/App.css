@@ -1,0 +1,324 @@
+/* App.css */
+/* Reset CSS và style chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== LAYOUT CHUNG ===== */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== LOGIN COMPONENT ===== */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-group input {
+  padding: 0.8rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+/* ===== MAIN COMPONENT ===== */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #f5f7fa;
+}
+
+.content-area {
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+}
+
+/* ===== NAVIGATION/MENU ===== */
+.nav-menu {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #4a5568;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.nav-item a:hover {
+  background-color: #f7fafc;
+  color: #4299e1;
+}
+
+.nav-item a.active {
+  background-color: #4299e1;
+  color: white;
+}
+
+/* ===== COMMON COMPONENTS ===== */
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: #4299e1;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3182ce;
+}
+
+.btn-secondary {
+  background-color: #fe5555;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #fe0000;
+}
+
+/* Tables */
+.table-container {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin: 1rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #f7fafc;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+tr:hover {
+  background-color: #f7fafc;
+}
+
+/* Forms */
+.form-container {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .login-container {
+    margin: 20px;
+    padding: 1.5rem;
+  }
+
+  .main-container {
+    padding: 0.5rem;
+  }
+
+  .content-area {
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-item {
+    margin-right: 0;
+  }
+
+  .form-container {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}
+/* Định dạng cho nút EMAIL */
+.email-link {
+  color: #4299e1; /* Màu xanh dương */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho EMAIL */
+.email-link:hover {
+  color: #fff; /* Chữ trắng khi hover */
+  background-color: #3182ce; /* Nền xanh đậm hơn khi hover */
+}
+
+/* Định dạng cho nút DEACTIVE */
+.deactive-link {
+  color: #fe5555; /* Màu đỏ */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho DEACTIVE */
+.deactive-link:hover {
+  color: #fff; /* Chữ trắng khi hover */
+  background-color: #fe0000; /* Nền đỏ đậm hơn khi hover */
+}

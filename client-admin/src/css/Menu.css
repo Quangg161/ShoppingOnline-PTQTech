@@ -1,0 +1,139 @@
+.sidebar-container {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #4a6584;
+    color: #ecf0f1;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-header {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #34495e;
+  }
+  
+  .user-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Đưa nội dung vào giữa */
+    gap: 1rem; /* Khoảng cách giữa ảnh và tên công ty */
+  }
+  .user-section img {
+    width: 100%; /* Giảm kích thước ảnh xuống 1/2 */
+    height: auto; /* Đảm bảo giữ nguyên tỷ lệ ảnh */
+    max-width: 135px; /* Bạn có thể điều chỉnh kích thước tối đa theo ý muốn */
+    border-radius: 5px; /* Tùy chọn: làm tròn góc ảnh một chút */
+  }
+  
+  
+  .website-name {
+    font-size: 1.25rem; /* Điều chỉnh kích thước chữ nếu cần */
+    color: #ecf0f1; /* Màu chữ, có thể thay đổi theo giao diện */
+  }
+  
+  
+  .welcome-text {
+    font-size: 0.9rem;
+  }
+  
+  .welcome-text b {
+    color: #3498db;
+  }
+  
+  .logout-link {
+    color: #e74c3c;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-link:hover {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .sidebar-nav {
+    flex-grow: 1;
+    padding: 1rem 0;
+  }
+  
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .menu-item {
+    width: 100%;
+  }
+  
+  .menu-link {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+  }
+  
+  .menu-link:hover {
+    background-color: #5d9bca;
+    border-left-color: #ffd786;
+    padding-left: 2rem;
+  }
+  
+  /* Active state for menu items */
+  .menu-link.active {
+    background-color: #3f85ba;
+    border-left-color: #ffc34c;
+    padding-left: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar-container {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .sidebar-header {
+      padding: 1rem;
+    }
+  
+    .user-section {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .menu-link {
+      padding: 0.8rem 1rem;
+    }
+  
+    .menu-link:hover {
+      padding-left: 1.5rem;
+    }
+  }
+  
+  /* Style for main content to not overlap with sidebar */
+  main {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      margin-left: 0;
+    }
+  }

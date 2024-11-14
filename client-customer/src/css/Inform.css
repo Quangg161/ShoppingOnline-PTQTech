@@ -1,0 +1,63 @@
+/* Logout Link */
+.logout-link {
+  color: red !important;  /* Màu đỏ cho Logout, thêm !important để đảm bảo không bị ghi đè */
+  text-decoration: none;   /* Không gạch dưới */
+}
+
+.logout-link:hover {
+  color: #ff6347;  /* Màu đỏ cam khi hover */
+  font-weight: bold;
+}
+
+/* Các liên kết khác (My Cart, My Profile, etc.) */
+.border-bottom a {
+  color: #418fd2;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.border-bottom a:hover {
+  color: #1f486c;
+  font-weight: bold;
+}
+
+
+/* Cải thiện cách hiển thị của "My cart" */
+.float-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  /* Đảm bảo mọi thứ được căn phải */
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  margin-right: 3px;  /* Khoảng cách giữa "My cart" và icon */
+}
+
+.cart-link svg {
+  margin-left: 3px;  /* Khoảng cách giữa icon và chữ "My cart" */
+}
+
+/* Cải thiện cách hiển thị cho phần "have items" */
+.have-items {
+  margin-left: 3px;  /* Khoảng cách giữa "My cart" và "have items" */
+}
+
+.border-bottom {
+  text-decoration: none;
+}
+
+/* Cải thiện cách hiển thị của liên kết "Logout" */
+.logout-link {
+  text-decoration: none;  /* Đảm bảo không có gạch chân */
+  font-weight: normal;
+}
+.border-bottom.active {
+  font-weight: bold;
+  color: #1f486c !important;
+  text-decoration: underline;
+}
+
+

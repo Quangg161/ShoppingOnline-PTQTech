@@ -1,0 +1,42 @@
+.inline {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  figure img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  figure img:hover {
+    transform: scale(1.05);
+  }
+  
+  figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+  }

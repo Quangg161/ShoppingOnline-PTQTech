@@ -1,0 +1,151 @@
+/* Căn chỉnh */
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Bảng datatable */
+.datatable {
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.datatable th, .datatable td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.datatable th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.datatable tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.datatable tr:hover {
+  background-color: #eaf2f8;
+  transition: background-color 0.2s ease;
+}
+
+.datatable img {
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Liên kết */
+.link {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 6px 10px;
+  background-color: #3498db;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover {
+  background-color: #2980b9;
+  transform: scale(1.03);
+}
+
+.datatable tr:last-child td {
+  border-top: 2px solid #ddd;
+}
+
+/* Hiệu ứng nút */
+button, .link {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #1e6fa8;
+  transform: translateY(0);
+}
+
+/* Định dạng cho đơn hàng mới nhất */
+.newest-order {
+  font-weight: bold;
+  background-color: #e9f6ff; /* Màu nền nhẹ cho dễ nhìn */
+}
+
+/* Định dạng màu sắc cho các trạng thái */
+.status-approved {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-canceled {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: #ffc107;
+  font-weight: bold;
+}
+/* Nút remove màu đỏ */
+.remove-btn {
+  background-color: #dc3545; /* Màu nền đỏ */
+  color: white; /* Màu chữ trắng */
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c82333; /* Màu nền đỏ đậm khi hover */
+  transform: scale(1.03);
+}
+
+.remove-btn:active {
+  background-color: #bd2130; /* Màu nền đỏ khi nút bị nhấn */
+  transform: translateY(0);
+}

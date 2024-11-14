@@ -1,0 +1,49 @@
+/* Căn giữa cả danh sách Category và Category Detail */
+.category-list-container {
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  align-items: center;
+  padding: 30px;
+}
+
+.category-list, .category-detail {
+  width: 100%; /* Đảm bảo cả hai phần chiếm hết chiều rộng */
+  max-width: 700px; /* Đặt độ rộng tối đa cho bảng */
+  margin-bottom: 50px; /* Tạo khoảng cách giữa Category List và Category Detail */
+}
+
+.text-center {
+  text-align: center;
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+table.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table.datatable th, table.datatable td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+table.datatable th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+table.datatable tr:hover {
+  background-color: #e9f6ff;
+  cursor: pointer;
+}
+
+.datatable tr:last-child td {
+  border-bottom: none;
+}

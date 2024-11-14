@@ -1,0 +1,66 @@
+/* Cải thiện layout grid cho sản phẩm */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Mỗi hàng 3 sản phẩm */
+  gap: 20px; /* Khoảng cách giữa các sản phẩm */
+  max-width: 1000px; /* Độ rộng tối đa */
+  margin: 0 auto; /* Căn giữa grid */
+}
+
+/* Các sản phẩm sẽ căn giữa và có chiều cao cố định */
+.inline {
+  text-align: center;
+  height: 400px; /* Đảm bảo tất cả sản phẩm có chiều cao bằng nhau */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Điều chỉnh figure cho các sản phẩm */
+figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* Điều chỉnh hình ảnh sản phẩm */
+figure img {
+  width: 100%; /* Đầy đủ chiều rộng của grid */
+  height: 250px; /* Chiều cao cố định */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hiệu ứng hover cho hình ảnh sản phẩm */
+figure:hover img {
+  transform: scale(1.05); /* Phóng to khi hover */
+}
+
+/* Tiêu đề và giá sản phẩm */
+figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-align: center;
+}

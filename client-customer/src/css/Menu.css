@@ -1,0 +1,84 @@
+/* Menu Component Styles */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin-right: 65px;
+  text-transform: uppercase;
+  padding-bottom: 5px; /* Đảm bảo khoảng cách dưới không bị ảnh hưởng */
+}
+
+/* Liên kết trong menu */
+.menu-link {
+  text-decoration: none;  /* Loại bỏ gạch chân mặc định */
+  color: inherit;         /* Giữ nguyên màu sắc hiện tại */
+  display: block;         /* Đảm bảo link chiếm toàn bộ diện tích của item */
+}
+
+/* Hiệu ứng hover cho menu item */
+.menu-item:hover .menu-link {
+  text-decoration: none;  /* Đảm bảo không có gạch chân khi hover */
+}
+
+/* Active State for Menu Item */
+.menu-item.active .menu-link {
+  color: #2f93fe;  /* Màu xanh cho danh mục đang active */
+  text-decoration: none;  /* Loại bỏ gạch chân khi item active */
+}
+
+/* Search Bar */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.keyword {
+  width: 250px; /* Tăng chiều rộng ô input */
+  padding: 8px 12px; /* Thêm padding để ô tìm kiếm rộng hơn */
+  border: 1px solid #a4a4a4;
+  border-radius: 20px 0 0 20px;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: #f9f9f9;
+  flex-grow: 1; /* Cho phép ô input mở rộng để chiếm không gian */
+}
+
+.search-button {
+  background-color: #65afff;
+  border: 1px solid #a4a4a4;
+  padding: 8px 12px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  margin-left: -1px; /* Để không có khoảng trống giữa input và button */
+}
+
+.search-button:hover {
+  background-color: #437ab5;
+}
+
+.search-button svg {
+  font-size: 1rem; /* Kích thước icon kính lúp */
+}
+
+/* Active State for Menu Item */
+.menu-item.active .menu-link {
+  color: #2f93fe; /* Màu xanh cho danh mục đang active */
+  text-decoration: none;  /* Loại bỏ gạch chân khi item active */
+}

@@ -1,0 +1,140 @@
+/* Product.css */
+.product-container {
+  display: flex;
+  justify-content: center; /* Căn giữa toàn bộ phần tử */
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  flex-direction: column; /* Đảm bảo rằng các phần tử sẽ xếp dọc thay vì ngang */
+}
+
+.product-list-wrapper {
+  width: 70%; /* Chỉnh width của container để căn giữa */
+  max-width: 850px; /* Đảm bảo không quá rộng */
+  margin: 0 auto; /* Căn giữa container */
+}
+
+.text-center {
+  text-align: center;
+  font-size: 24px;
+  color: #444444;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+table.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table.datatable th, table.datatable td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+table.datatable th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+table.datatable tr:hover {
+  background-color: #e9f6ff;
+  cursor: pointer;
+}
+
+.datatable img {
+  border-radius: 5px;
+}
+
+/* Phần phân trang */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 0;
+}
+
+.pagination-container span {
+  padding: 3px 8px;
+  color: #0079fb;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-container span:hover {
+  background-color: #3295ff;
+  color: #fff;
+}
+
+.pagination-container span.active {
+  font-weight: bold;
+  background-color: #3295ff;
+  color: #fff;
+}
+
+.pagination-container span:active {
+  background-color: #3295ff;
+  color: #fff;
+}
+/* Định dạng màu sắc cho các trạng thái */
+.status-approved {
+  color: #28a745 !important; /* Màu xanh lá cho trạng thái Approved */
+  font-weight: bold;
+}
+
+.status-canceled {
+  color: #dc3545 !important; /* Màu đỏ cho trạng thái Canceled */
+  font-weight: bold;
+}
+.status-pending {
+  color: #ffc107 !important; /* Màu vàng cho trạng thái Pending */
+  font-weight: bold;
+}
+
+
+/* Định dạng cho nút APPROVE */
+.approve-link {
+  color: #28a745; /* Màu xanh lá */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho APPROVE */
+.approve-link:hover {
+  color: #fff; /* Chữ trắng khi hover */
+  background-color: #218838; /* Màu nền xanh lá đậm khi hover */
+}
+
+/* Định dạng cho nút CANCEL */
+.cancel-link {
+  color: #dc3545; /* Màu đỏ */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho CANCEL */
+.cancel-link:hover {
+  color: #fff; /* Chữ trắng khi hover */
+  background-color: #c82333; /* Màu nền đỏ đậm khi hover */
+}
+/* Product.css */
+.newest-order {
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #e9f6ff; /* Màu nền nhẹ cho dễ nhìn */
+}
+
